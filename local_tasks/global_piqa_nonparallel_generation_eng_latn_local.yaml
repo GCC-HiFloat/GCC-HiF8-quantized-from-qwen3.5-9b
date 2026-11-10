@@ -1,0 +1,23 @@
+task: global_piqa_nonparallel_generation_eng_latn_local
+dataset_path: csv
+dataset_kwargs:
+  data_files:
+    test: /filesdir/datasets/global-piqa/nonparallel/data/nonparallel_eng_latn.tsv
+  delimiter: "\t"
+test_split: test
+output_type: generate_until
+doc_to_text: "Given the following situation, which option is more likely to be correct?\n\nSituation:\n{{prompt}} ...\n\nOption A: {{solution0}}\n\nOption B: {{solution1}}\n\nYour response should end with \"The best answer is: [answer_letter]\" where [answer_letter] is one of A or B."
+doc_to_target: "{{['A', 'B'][label]}}"
+generation_kwargs:
+  do_sample: false
+  temperature: 0.0
+  max_gen_toks: 128
+  until: []
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+    ignore_case: true
+    ignore_punctuation: true
+metadata:
+  version: 1.0

@@ -1,0 +1,302 @@
+[
+  {
+    "op": "Hif8DynamicQuant",
+    "input_desc": [
+      {
+        "name": "x",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float16", "bfloat16"]
+      }
+    ],
+    "output_desc": [
+      {
+        "name": "data",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["uint8", "uint8"]
+      },
+      {
+        "name": "token_scale",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float", "float"]
+      }
+    ]
+  },
+  {
+    "op": "Hif8StaticQuant",
+    "input_desc": [
+      {
+        "name": "x",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float16", "bfloat16"]
+      },
+      {
+        "name": "fixed_scale",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float", "float"]
+      }
+    ],
+    "output_desc": [
+      {
+        "name": "data",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["uint8", "uint8"]
+      },
+      {
+        "name": "row_scale",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float", "float"]
+      }
+    ]
+  },
+  {
+    "op": "SoftHif8Gemv",
+    "input_desc": [
+      {
+        "name": "activation",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["uint8", "uint8", "uint8", "uint8"]
+      },
+      {
+        "name": "weight",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["uint8", "uint8", "uint8", "uint8"]
+      },
+      {
+        "name": "token_scale",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float", "float", "float", "float"]
+      },
+      {
+        "name": "channel_scale",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float", "float", "float", "float"]
+      },
+      {
+        "name": "bias",
+        "param_type": "optional",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float16", "float16", "bfloat16", "bfloat16"]
+      }
+    ],
+    "output_desc": [
+      {
+        "name": "y",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float16", "bfloat16", "float16", "bfloat16"]
+      }
+    ],
+    "attr": [
+      {
+        "name": "output_dtype",
+        "param_type": "required",
+        "type": "int"
+      }
+    ]
+  },
+  {
+    "op": "SoftHif8Gemm",
+    "input_desc": [
+      {
+        "name": "activation",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["uint8", "uint8", "uint8", "uint8"]
+      },
+      {
+        "name": "weight",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["uint8", "uint8", "uint8", "uint8"]
+      },
+      {
+        "name": "token_scale",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float", "float", "float", "float"]
+      },
+      {
+        "name": "channel_scale",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float", "float", "float", "float"]
+      },
+      {
+        "name": "bias",
+        "param_type": "optional",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float16", "float16", "bfloat16", "bfloat16"]
+      }
+    ],
+    "output_desc": [
+      {
+        "name": "y",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float16", "bfloat16", "float16", "bfloat16"]
+      }
+    ],
+    "attr": [
+      {
+        "name": "output_dtype",
+        "param_type": "required",
+        "type": "int"
+      }
+    ]
+  },
+  {
+    "op": "SoftHif8PrefillGemm",
+    "input_desc": [
+      {
+        "name": "activation",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["uint8", "uint8", "uint8", "uint8"]
+      },
+      {
+        "name": "weight",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["uint8", "uint8", "uint8", "uint8"]
+      },
+      {
+        "name": "token_scale",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float", "float", "float", "float"]
+      },
+      {
+        "name": "channel_scale",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float", "float", "float", "float"]
+      },
+      {
+        "name": "bias",
+        "param_type": "optional",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float16", "float16", "bfloat16", "bfloat16"]
+      }
+    ],
+    "output_desc": [
+      {
+        "name": "y",
+        "param_type": "required",
+        "format": ["ND", "ND", "ND", "ND"],
+        "type": ["float16", "bfloat16", "float16", "bfloat16"]
+      }
+    ],
+    "attr": [
+      {
+        "name": "output_dtype",
+        "param_type": "required",
+        "type": "int"
+      }
+    ]
+  },
+  {
+    "op": "SoftHif8FusedGemm",
+    "input_desc": [
+      {
+        "name": "activation",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float16", "bfloat16"]
+      },
+      {
+        "name": "weight",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["uint8", "uint8"]
+      },
+      {
+        "name": "channel_scale",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float", "float"]
+      },
+      {
+        "name": "bias",
+        "param_type": "optional",
+        "format": ["ND", "ND"],
+        "type": ["float16", "bfloat16"]
+      }
+    ],
+    "output_desc": [
+      {
+        "name": "y",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float16", "bfloat16"]
+      }
+    ],
+    "attr": [
+      {
+        "name": "output_dtype",
+        "param_type": "required",
+        "type": "int"
+      }
+    ]
+  },
+  {
+    "op": "SoftHif8StaticFusedGemm",
+    "input_desc": [
+      {
+        "name": "activation",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float16", "bfloat16"]
+      },
+      {
+        "name": "weight",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["uint8", "uint8"]
+      },
+      {
+        "name": "fixed_scale",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float", "float"]
+      },
+      {
+        "name": "channel_scale",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float", "float"]
+      },
+      {
+        "name": "bias",
+        "param_type": "optional",
+        "format": ["ND", "ND"],
+        "type": ["float16", "bfloat16"]
+      }
+    ],
+    "output_desc": [
+      {
+        "name": "y",
+        "param_type": "required",
+        "format": ["ND", "ND"],
+        "type": ["float16", "bfloat16"]
+      }
+    ],
+    "attr": [
+      {
+        "name": "output_dtype",
+        "param_type": "required",
+        "type": "int"
+      }
+    ]
+  }
+]

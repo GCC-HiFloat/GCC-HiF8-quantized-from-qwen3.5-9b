@@ -1,0 +1,19 @@
+task: piqa_local
+dataset_path: parquet
+dataset_kwargs:
+  data_files:
+    validation: /filesdir/eval_data/qwen35_eight/piqa/validation.parquet
+validation_split: validation
+output_type: multiple_choice
+doc_to_text: "Question: {{goal}}\nAnswer:"
+doc_to_target: "{{label}}"
+doc_to_choice: "{{[sol1, sol2]}}"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0-local

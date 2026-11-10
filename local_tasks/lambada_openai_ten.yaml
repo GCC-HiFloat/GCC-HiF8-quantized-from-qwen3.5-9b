@@ -1,0 +1,18 @@
+task: lambada_openai_ten
+dataset_path: parquet
+dataset_kwargs:
+  data_files:
+    test: /filesdir/eval_data/qwen35_ten/lambada/default/test/default.parquet
+test_split: test
+output_type: loglikelihood
+doc_to_text: "{{text.split(' ')[:-1]|join(' ')}}"
+doc_to_target: "{{' '+text.split(' ')[-1]}}"
+metric_list:
+  - metric: perplexity
+    aggregation: perplexity
+    higher_is_better: false
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0-local-ten

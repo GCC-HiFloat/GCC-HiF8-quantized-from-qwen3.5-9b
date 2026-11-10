@@ -1,0 +1,48 @@
+{
+  "profiles": {
+    "interactive": [
+      512,
+      256
+    ],
+    "long-output": [
+      512,
+      1024
+    ],
+    "long-input": [
+      4096,
+      256
+    ]
+  },
+  "num_prompts": 16,
+  "num_warmups": 4,
+  "repetitions": 3,
+  "max_model_len": 8192,
+  "kv_bytes": 2147483648,
+  "card": 6,
+  "models": {
+    "bf16": "/filesdir/qwen3.5-9b",
+    "hif8": "/filesdir/qwen3.5-9b-hif8-static"
+  },
+  "source_head": "0a56d4a5ec526b30dea42a42fd169ff93c9f61c4",
+  "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "require_no_preemptions": true,
+  "distribution_versions": {
+    "torch": "2.10.0+cpu",
+    "torch-npu": "2.10.0",
+    "triton": "3.5.0",
+    "triton-ascend": "3.2.1",
+    "transformers": "5.5.4",
+    "vllm": "0.22.1",
+    "vllm-ascend": "0.26.0"
+  },
+  "source_checkouts": {
+    "/tmp/vllm-d02": {
+      "head": "d02df748bf9efd99022f1a062597dc3cb3808485",
+      "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/tmp/vllm-ascend-v026": {
+      "head": "53b489b78560363871ba5402dd72cfd124c4b209",
+      "tracked_diff_sha256": "203cf5d5d23ca29db55a19f06251e0ac026d0ee743f8ce9ed49ce8568ab5f7a9"
+    }
+  }
+}

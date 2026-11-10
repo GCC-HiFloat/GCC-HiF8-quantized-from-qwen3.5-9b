@@ -1,0 +1,19 @@
+task: mmlu_all_ten
+dataset_path: parquet
+dataset_kwargs:
+  data_files:
+    test: /filesdir/eval_data/qwen35_ten/mmlu/all/test-00000-of-00001.parquet
+    dev: /filesdir/eval_data/qwen35_ten/mmlu/all/dev-00000-of-00001.parquet
+test_split: test
+training_split: dev
+validation_split: dev
+output_type: multiple_choice
+doc_to_text: "{{question}}\nAnswer:"
+doc_to_target: "{{answer}}"
+doc_to_choice: "{{choices}}"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0-local-ten

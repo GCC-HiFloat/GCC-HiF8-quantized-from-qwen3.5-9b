@@ -1,0 +1,5289 @@
+{
+  "collection": {
+    "device": "npu:0",
+    "observer_capacity": 65536,
+    "python_version": "3.10.20",
+    "samples_per_forward": 512,
+    "torch_version": "2.10.0+cpu",
+    "transformers_version": "5.14.1"
+  },
+  "created_at_utc": "2026-08-21T14:53:05.982764+00:00",
+  "dataset": {
+    "add_special_tokens": false,
+    "config": "wikitext-2-raw-v1",
+    "loader_fingerprint": "1679591ddaf2ce5c",
+    "parquet_path": "/public-flash/lvyufeng/.cache/huggingface/hub/datasets--Salesforce--wikitext/blobs/e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7",
+    "parquet_sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7",
+    "repository": "Salesforce/wikitext",
+    "row_count": 36718,
+    "snapshot_revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "split": "train",
+    "text_joiner": "\\n\\n",
+    "token_count": 2505827
+  },
+  "format": "W8A8HIF8_STATIC_CALIBRATION",
+  "kv_cache": {
+    "layers": {
+      "11": {
+        "key": {
+          "observer": {
+            "max_abs_per_group": [
+              16.625,
+              17.375,
+              15.125,
+              16.5
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996553659439087,
+              "max_abs": 12.0625,
+              "mse": 0.0016483336221426725,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006894188700243831,
+              "sample_count": 65536,
+              "scale": 1.328125
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.999654233455658,
+              "max_abs": 13.0625,
+              "mse": 0.001666046679019928,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006918245344422758,
+              "sample_count": 65536,
+              "scale": 1.2366533279418945
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996536374092102,
+              "max_abs": 14.75,
+              "mse": 0.0017081405967473984,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006927059730514884,
+              "sample_count": 65536,
+              "scale": 0.8949320316314697
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996552467346191,
+              "max_abs": 11.75,
+              "mse": 0.001638202928006649,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006895051337778568,
+              "sample_count": 65536,
+              "scale": 1.2534922361373901
+            }
+          ],
+          "scales": [
+            1.328125,
+            1.2366533279418945,
+            0.8949320316314697,
+            1.2534922361373901
+          ]
+        },
+        "num_kv_heads": 4,
+        "value": {
+          "observer": {
+            "max_abs_per_group": [
+              30.125,
+              47.5,
+              37.0,
+              27.25
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996604323387146,
+              "max_abs": 28.25,
+              "mse": 0.00032018640195019543,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006790732149966061,
+              "sample_count": 65536,
+              "scale": 0.35304585099220276
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996732473373413,
+              "max_abs": 42.0,
+              "mse": 0.0003128539538010955,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.000653472903650254,
+              "sample_count": 65536,
+              "scale": 0.65625
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996629953384399,
+              "max_abs": 35.5,
+              "mse": 0.0005176379345357418,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.00067466328619048,
+              "sample_count": 65536,
+              "scale": 0.5546875
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996536374092102,
+              "max_abs": 4.71875,
+              "mse": 0.0003638748312368989,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006926680216565728,
+              "sample_count": 65536,
+              "scale": 0.40234375
+            }
+          ],
+          "scales": [
+            0.35304585099220276,
+            0.65625,
+            0.5546875,
+            0.40234375
+          ]
+        }
+      },
+      "15": {
+        "key": {
+          "observer": {
+            "max_abs_per_group": [
+              16.875,
+              14.875,
+              15.3125,
+              13.4375
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.999653697013855,
+              "max_abs": 12.875,
+              "mse": 0.0016149424482136965,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006926002097316086,
+              "sample_count": 65536,
+              "scale": 1.7754685878753662
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996531009674072,
+              "max_abs": 11.0,
+              "mse": 0.0016349422512575984,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006936501595191658,
+              "sample_count": 65536,
+              "scale": 0.8537772297859192
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996566772460938,
+              "max_abs": 11.875,
+              "mse": 0.0015690445434302092,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006867290358059108,
+              "sample_count": 65536,
+              "scale": 1.328125
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996524453163147,
+              "max_abs": 12.4375,
+              "mse": 0.0016815576236695051,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006950650131329894,
+              "sample_count": 65536,
+              "scale": 0.9653503894805908
+            }
+          ],
+          "scales": [
+            1.7754685878753662,
+            0.8537772297859192,
+            1.328125,
+            0.9653503894805908
+          ]
+        },
+        "num_kv_heads": 4,
+        "value": {
+          "observer": {
+            "max_abs_per_group": [
+              42.5,
+              35.5,
+              33.25,
+              30.625
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996556043624878,
+              "max_abs": 6.15625,
+              "mse": 0.0006225684192031622,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006895604310557246,
+              "sample_count": 65536,
+              "scale": 0.435546875
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.999657154083252,
+              "max_abs": 33.0,
+              "mse": 0.0005441403482109308,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006859415443614125,
+              "sample_count": 65536,
+              "scale": 0.4152045249938965
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996588230133057,
+              "max_abs": 7.40625,
+              "mse": 0.0005669426172971725,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006824001320637763,
+              "sample_count": 65536,
+              "scale": 0.676689863204956
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.999671220779419,
+              "max_abs": 7.375,
+              "mse": 0.0006129844696260989,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006575505249202251,
+              "sample_count": 65536,
+              "scale": 0.4609375
+            }
+          ],
+          "scales": [
+            0.435546875,
+            0.4152045249938965,
+            0.676689863204956,
+            0.4609375
+          ]
+        }
+      },
+      "19": {
+        "key": {
+          "observer": {
+            "max_abs_per_group": [
+              17.0,
+              14.5,
+              14.4375,
+              18.25
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996545314788818,
+              "max_abs": 15.75,
+              "mse": 0.0016586680430918932,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.000691001710947603,
+              "sample_count": 65536,
+              "scale": 1.0445820093154907
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996551275253296,
+              "max_abs": 11.375,
+              "mse": 0.0017758135218173265,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006903967005200684,
+              "sample_count": 65536,
+              "scale": 1.122191309928894
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996581673622131,
+              "max_abs": 11.375,
+              "mse": 0.001672172686085105,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006837719120085239,
+              "sample_count": 65536,
+              "scale": 1.2179266214370728
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996533989906311,
+              "max_abs": 18.25,
+              "mse": 0.0017754818545654416,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006931899697519839,
+              "sample_count": 65536,
+              "scale": 0.896359384059906
+            }
+          ],
+          "scales": [
+            1.0445820093154907,
+            1.122191309928894,
+            1.2179266214370728,
+            0.896359384059906
+          ]
+        },
+        "num_kv_heads": 4,
+        "value": {
+          "observer": {
+            "max_abs_per_group": [
+              64.0,
+              56.0,
+              73.0,
+              65.5
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996536374092102,
+              "max_abs": 8.0,
+              "mse": 0.0007723354501649737,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006927744252607226,
+              "sample_count": 65536,
+              "scale": 0.6496664881706238
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996621608734131,
+              "max_abs": 54.25,
+              "mse": 0.001206615474075079,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006762134726159275,
+              "sample_count": 65536,
+              "scale": 1.1171875
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996537566184998,
+              "max_abs": 12.0,
+              "mse": 0.001255085109733045,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006925935740582645,
+              "sample_count": 65536,
+              "scale": 1.5703916549682617
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996563792228699,
+              "max_abs": 15.6875,
+              "mse": 0.0016544883837923408,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.000687186315190047,
+              "sample_count": 65536,
+              "scale": 0.75390625
+            }
+          ],
+          "scales": [
+            0.6496664881706238,
+            1.1171875,
+            1.5703916549682617,
+            0.75390625
+          ]
+        }
+      },
+      "23": {
+        "key": {
+          "observer": {
+            "max_abs_per_group": [
+              15.0625,
+              14.3125,
+              15.0625,
+              11.8125
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996582865715027,
+              "max_abs": 13.0625,
+              "mse": 0.0016672539059072733,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006834817468188703,
+              "sample_count": 65536,
+              "scale": 1.398998498916626
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996541738510132,
+              "max_abs": 11.3125,
+              "mse": 0.0015879436396062374,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006913170218467712,
+              "sample_count": 65536,
+              "scale": 1.1163578033447266
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996568560600281,
+              "max_abs": 11.625,
+              "mse": 0.001612119609490037,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.000686354236677289,
+              "sample_count": 65536,
+              "scale": 0.7265625
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.999652624130249,
+              "max_abs": 9.875,
+              "mse": 0.0015428003389388323,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006951334653422236,
+              "sample_count": 65536,
+              "scale": 1.0041584968566895
+            }
+          ],
+          "scales": [
+            1.398998498916626,
+            1.1163578033447266,
+            0.7265625,
+            1.0041584968566895
+          ]
+        },
+        "num_kv_heads": 4,
+        "value": {
+          "observer": {
+            "max_abs_per_group": [
+              37.0,
+              37.0,
+              22.75,
+              46.75
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996552467346191,
+              "max_abs": 30.125,
+              "mse": 0.0016231073532253504,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006892202654853463,
+              "sample_count": 65536,
+              "scale": 2.549809217453003
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996528029441833,
+              "max_abs": 23.5,
+              "mse": 0.0012823413126170635,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006946306675672531,
+              "sample_count": 65536,
+              "scale": 1.7709296941757202
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996814727783203,
+              "max_abs": 14.625,
+              "mse": 0.0017524941358715296,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006374242366291583,
+              "sample_count": 65536,
+              "scale": 0.9426407217979431
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996589422225952,
+              "max_abs": 21.875,
+              "mse": 0.0022218176163733006,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006833208608441055,
+              "sample_count": 65536,
+              "scale": 1.3671875
+            }
+          ],
+          "scales": [
+            2.549809217453003,
+            1.7709296941757202,
+            0.9426407217979431,
+            1.3671875
+          ]
+        }
+      },
+      "27": {
+        "key": {
+          "observer": {
+            "max_abs_per_group": [
+              13.1875,
+              15.0,
+              11.375,
+              15.625
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 57,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.99965500831604,
+              "max_abs": 10.4375,
+              "mse": 0.0014438616344705224,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.000689930166117847,
+              "sample_count": 65536,
+              "scale": 0.96484375
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996559023857117,
+              "max_abs": 12.875,
+              "mse": 0.0014232943067327142,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006886382470838726,
+              "sample_count": 65536,
+              "scale": 0.8046875
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996548891067505,
+              "max_abs": 8.8125,
+              "mse": 0.0014487567823380232,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006906177732162178,
+              "sample_count": 65536,
+              "scale": 0.9050703048706055
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996567368507385,
+              "max_abs": 9.6875,
+              "mse": 0.0014902842231094837,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006864882307127118,
+              "sample_count": 65536,
+              "scale": 0.9735545516014099
+            }
+          ],
+          "scales": [
+            0.96484375,
+            0.8046875,
+            0.9050703048706055,
+            0.9735545516014099
+          ]
+        },
+        "num_kv_heads": 4,
+        "value": {
+          "observer": {
+            "max_abs_per_group": [
+              43.0,
+              117.5,
+              68.0,
+              43.75
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996606111526489,
+              "max_abs": 33.0,
+              "mse": 0.004088298883289099,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006786498124711215,
+              "sample_count": 65536,
+              "scale": 2.7872042655944824
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9997127652168274,
+              "max_abs": 99.0,
+              "mse": 0.014962044544517994,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0005744471563957632,
+              "sample_count": 65536,
+              "scale": 10.680059432983398
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996572732925415,
+              "max_abs": 33.5,
+              "mse": 0.004797994624823332,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006855294341221452,
+              "sample_count": 65536,
+              "scale": 2.09375
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996719360351562,
+              "max_abs": 27.875,
+              "mse": 0.004586808383464813,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006561240879818797,
+              "sample_count": 65536,
+              "scale": 1.4453125
+            }
+          ],
+          "scales": [
+            2.7872042655944824,
+            10.680059432983398,
+            2.09375,
+            1.4453125
+          ]
+        }
+      },
+      "3": {
+        "key": {
+          "observer": {
+            "max_abs_per_group": [
+              13.5625,
+              12.9375,
+              12.0625,
+              13.625
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996550679206848,
+              "max_abs": 11.0625,
+              "mse": 0.0012952833203598857,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006898404681123793,
+              "sample_count": 65536,
+              "scale": 0.9432382583618164
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996532201766968,
+              "max_abs": 11.6875,
+              "mse": 0.001220395788550377,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006935449200682342,
+              "sample_count": 65536,
+              "scale": 0.7343867421150208
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996544718742371,
+              "max_abs": 10.125,
+              "mse": 0.0012925344053655863,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006927053327672184,
+              "sample_count": 65536,
+              "scale": 0.9391699433326721
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996594786643982,
+              "max_abs": 13.25,
+              "mse": 0.001278178533539176,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006812353385612369,
+              "sample_count": 65536,
+              "scale": 1.1160664558410645
+            }
+          ],
+          "scales": [
+            0.9432382583618164,
+            0.7343867421150208,
+            0.9391699433326721,
+            1.1160664558410645
+          ]
+        },
+        "num_kv_heads": 4,
+        "value": {
+          "observer": {
+            "max_abs_per_group": [
+              11.375,
+              12.0,
+              14.375,
+              11.5625
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.999655544757843,
+              "max_abs": 5.34375,
+              "mse": 0.00023110120673663914,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.000688654079567641,
+              "sample_count": 65536,
+              "scale": 0.32449793815612793
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996563196182251,
+              "max_abs": 6.65625,
+              "mse": 0.0002650823153089732,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006874112877994776,
+              "sample_count": 65536,
+              "scale": 0.416015625
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996551871299744,
+              "max_abs": 6.46875,
+              "mse": 0.00025157193886116147,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.000689397391397506,
+              "sample_count": 65536,
+              "scale": 0.5311852693557739
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996525645256042,
+              "max_abs": 5.15625,
+              "mse": 0.00039741763612255454,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006948612863197923,
+              "sample_count": 65536,
+              "scale": 0.30860263109207153
+            }
+          ],
+          "scales": [
+            0.32449793815612793,
+            0.416015625,
+            0.5311852693557739,
+            0.30860263109207153
+          ]
+        }
+      },
+      "31": {
+        "key": {
+          "observer": {
+            "max_abs_per_group": [
+              11.5625,
+              10.5,
+              10.9375,
+              11.25
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996557831764221,
+              "max_abs": 8.25,
+              "mse": 0.0013364633778110147,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006885692710056901,
+              "sample_count": 65536,
+              "scale": 0.6548859477043152
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996562004089355,
+              "max_abs": 8.375,
+              "mse": 0.0014445171691477299,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006878573913127184,
+              "sample_count": 65536,
+              "scale": 1.2208528518676758
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996557831764221,
+              "max_abs": 7.59375,
+              "mse": 0.0013736557448282838,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006886957562528551,
+              "sample_count": 65536,
+              "scale": 0.53515625
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996581077575684,
+              "max_abs": 9.75,
+              "mse": 0.0013786664931103587,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006836483371444046,
+              "sample_count": 65536,
+              "scale": 0.609375
+            }
+          ],
+          "scales": [
+            0.6548859477043152,
+            1.2208528518676758,
+            0.53515625,
+            0.609375
+          ]
+        },
+        "num_kv_heads": 4,
+        "value": {
+          "observer": {
+            "max_abs_per_group": [
+              66.0,
+              105.5,
+              55.25,
+              68.0
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996627569198608,
+              "max_abs": 53.25,
+              "mse": 0.014044854789972305,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006744699785485864,
+              "sample_count": 65536,
+              "scale": 3.328125
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996559023857117,
+              "max_abs": 53.0,
+              "mse": 0.020218288525938988,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006881261360831559,
+              "sample_count": 65536,
+              "scale": 4.073091983795166
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996570348739624,
+              "max_abs": 30.75,
+              "mse": 0.010312473401427269,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006859147688373923,
+              "sample_count": 65536,
+              "scale": 2.019944429397583
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996674060821533,
+              "max_abs": 26.5,
+              "mse": 0.013325736857950687,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006657196208834648,
+              "sample_count": 65536,
+              "scale": 2.828125
+            }
+          ],
+          "scales": [
+            3.328125,
+            4.073091983795166,
+            2.019944429397583,
+            2.828125
+          ]
+        }
+      },
+      "7": {
+        "key": {
+          "observer": {
+            "max_abs_per_group": [
+              15.5625,
+              15.0625,
+              14.75,
+              14.25
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996557235717773,
+              "max_abs": 11.875,
+              "mse": 0.001624181168153882,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006884891190566123,
+              "sample_count": 65536,
+              "scale": 0.7421875
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996523261070251,
+              "max_abs": 12.625,
+              "mse": 0.0015209331177175045,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006951903342269361,
+              "sample_count": 65536,
+              "scale": 1.5298653841018677
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996535778045654,
+              "max_abs": 14.6875,
+              "mse": 0.0015702535165473819,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006927124923095107,
+              "sample_count": 65536,
+              "scale": 1.2694191932678223
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996554851531982,
+              "max_abs": 10.9375,
+              "mse": 0.0015575180295854807,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.000690066022798419,
+              "sample_count": 65536,
+              "scale": 0.68359375
+            }
+          ],
+          "scales": [
+            0.7421875,
+            1.5298653841018677,
+            1.2694191932678223,
+            0.68359375
+          ]
+        },
+        "num_kv_heads": 4,
+        "value": {
+          "observer": {
+            "max_abs_per_group": [
+              29.5,
+              19.375,
+              22.25,
+              10.5625
+            ],
+            "observation_count": 128,
+            "sample_count_per_group": 65536,
+            "sampled_nonfinite_per_group": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_values_per_group": 67108864
+          },
+          "per_head_search_results": [
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996567964553833,
+              "max_abs": 5.875,
+              "mse": 0.0003681693342514336,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006873567472212017,
+              "sample_count": 65536,
+              "scale": 0.577707052230835
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996524453163147,
+              "max_abs": 11.4375,
+              "mse": 0.0004570548189803958,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006953285192139447,
+              "sample_count": 65536,
+              "scale": 1.0703125
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996615052223206,
+              "max_abs": 6.1875,
+              "mse": 0.00044914596946910024,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.000676999450661242,
+              "sample_count": 65536,
+              "scale": 0.47265625
+            },
+            {
+              "candidate_count": 64,
+              "clipping_rate": 0.0,
+              "cosine_similarity": 0.9996554851531982,
+              "max_abs": 6.46875,
+              "mse": 0.00023257805150933564,
+              "nonfinite_count": 0,
+              "normalized_mse": 0.0006891273660585284,
+              "sample_count": 65536,
+              "scale": 0.3954394459724426
+            }
+          ],
+          "scales": [
+            0.577707052230835,
+            1.0703125,
+            0.47265625,
+            0.3954394459724426
+          ]
+        }
+      }
+    },
+    "linear_attention_recurrent_state": "floating_point",
+    "quantized_scope": "full_attention_only",
+    "scale_granularity": "static_per_layer_per_kv_head_separate_k_v"
+  },
+  "linear_groups": {
+    "model.language_model.layers.0.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.0.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.0.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          56.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.6271889209747314,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996586441993713,
+        "max_abs": 39.0,
+        "mse": 0.000798878725618124,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006851261132396758,
+        "sample_count": 65536,
+        "scale": 2.6271889209747314
+      },
+      "shared_runtime_members": [
+        "model.layers.0.linear_attn.in_proj_qkv",
+        "model.layers.0.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.0.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.0.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.0.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          23.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.1353723108768463,
+      "search_result": {
+        "candidate_count": 56,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9998739361763,
+        "max_abs": 2.046875,
+        "mse": 1.159733756139758e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0002713164431042969,
+        "sample_count": 65536,
+        "scale": 0.1353723108768463
+      },
+      "shared_runtime_members": [
+        "model.layers.0.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.0.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.0.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.0.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          4.34375
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.039306640625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997115135192871,
+        "max_abs": 1.2578125,
+        "mse": 6.70517152911998e-08,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005769188283011317,
+        "sample_count": 65536,
+        "scale": 0.039306640625
+      },
+      "shared_runtime_members": [
+        "model.layers.0.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.0.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.0.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.0.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          4.0625
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.267578125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996541142463684,
+        "max_abs": 2.765625,
+        "mse": 1.3950255379313603e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006916204583831131,
+        "sample_count": 65536,
+        "scale": 0.267578125
+      },
+      "shared_runtime_members": [
+        "model.layers.0.mlp.gate_proj",
+        "model.layers.0.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.1.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.1.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.1.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          28.125
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.42861562967300415,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9998500347137451,
+        "max_abs": 28.0,
+        "mse": 7.080985960783437e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0003023474710062146,
+        "sample_count": 65536,
+        "scale": 0.42861562967300415
+      },
+      "shared_runtime_members": [
+        "model.layers.1.linear_attn.in_proj_qkv",
+        "model.layers.1.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.1.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.1.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.1.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          2.984375
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.031494140625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999679684638977,
+        "max_abs": 0.50390625,
+        "mse": 1.4820784599578474e-07,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006446503102779388,
+        "sample_count": 65536,
+        "scale": 0.031494140625
+      },
+      "shared_runtime_members": [
+        "model.layers.1.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.1.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.1.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.1.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          7.78125
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.06494140625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996763467788696,
+        "max_abs": 1.0390625,
+        "mse": 2.1210975376106944e-07,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000657496799249202,
+        "sample_count": 65536,
+        "scale": 0.06494140625
+      },
+      "shared_runtime_members": [
+        "model.layers.1.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.1.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.1.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.1.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          5.40625
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.17578125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996591210365295,
+        "max_abs": 2.8125,
+        "mse": 2.7422567654866725e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006818201509304345,
+        "sample_count": 65536,
+        "scale": 0.17578125
+      },
+      "shared_runtime_members": [
+        "model.layers.1.mlp.gate_proj",
+        "model.layers.1.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.10.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.10.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.10.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          55.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.28125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997535347938538,
+        "max_abs": 52.5,
+        "mse": 0.00044367756345309317,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0004998517106287181,
+        "sample_count": 65536,
+        "scale": 3.28125
+      },
+      "shared_runtime_members": [
+        "model.layers.10.linear_attn.in_proj_qkv",
+        "model.layers.10.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.10.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.10.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.10.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          27.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.11554696410894394,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999661386013031,
+        "max_abs": 1.6640625,
+        "mse": 4.652662937587593e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006809279439039528,
+        "sample_count": 65536,
+        "scale": 0.11554696410894394
+      },
+      "shared_runtime_members": [
+        "model.layers.10.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.10.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.10.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.10.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          71.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.12511105835437775,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996619820594788,
+        "max_abs": 3.515625,
+        "mse": 4.224806616548449e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006775569054298103,
+        "sample_count": 65536,
+        "scale": 0.12511105835437775
+      },
+      "shared_runtime_members": [
+        "model.layers.10.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.10.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.10.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.10.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          36.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.0352420806884766,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999754011631012,
+        "max_abs": 33.0,
+        "mse": 0.00022362693562172353,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0004942181403748691,
+        "sample_count": 65536,
+        "scale": 2.0352420806884766
+      },
+      "shared_runtime_members": [
+        "model.layers.10.mlp.gate_proj",
+        "model.layers.10.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.11.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.11.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.11.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          18.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.087890625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996628761291504,
+        "max_abs": 2.8125,
+        "mse": 4.379117399366805e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006743877311237156,
+        "sample_count": 65536,
+        "scale": 0.087890625
+      },
+      "shared_runtime_members": [
+        "model.layers.11.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.11.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.11.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.11.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          38.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.9140625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997372627258301,
+        "max_abs": 30.625,
+        "mse": 0.00023462026729248464,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005298986216075718,
+        "sample_count": 65536,
+        "scale": 1.9140625
+      },
+      "shared_runtime_members": [
+        "model.layers.11.mlp.gate_proj",
+        "model.layers.11.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.11.self_attn.o_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.11.self_attn.o_proj.input_scale",
+      "hook_module": "model.layers.11.self_attn.o_proj",
+      "observer": {
+        "max_abs_per_group": [
+          6.03125
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.1493404507637024,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996559619903564,
+        "max_abs": 1.7265625,
+        "mse": 1.6098772903205827e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006880737491883337,
+        "sample_count": 65536,
+        "scale": 0.1493404507637024
+      },
+      "shared_runtime_members": [
+        "model.layers.11.self_attn.o_proj"
+      ]
+    },
+    "model.language_model.layers.11.self_attn.q_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.11.self_attn.q_proj.input_scale",
+      "hook_module": "model.layers.11.self_attn.q_proj",
+      "observer": {
+        "max_abs_per_group": [
+          102.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.6712749004364014,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997824430465698,
+        "max_abs": 56.25,
+        "mse": 0.00041369523387402296,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.00043679060763679445,
+        "sample_count": 65536,
+        "scale": 3.6712749004364014
+      },
+      "shared_runtime_members": [
+        "model.layers.11.self_attn.q_proj",
+        "model.layers.11.self_attn.k_proj",
+        "model.layers.11.self_attn.v_proj"
+      ]
+    },
+    "model.language_model.layers.12.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.12.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.12.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          56.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.484375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997852444648743,
+        "max_abs": 53.0,
+        "mse": 0.00042371556628495455,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.00043972794082947075,
+        "sample_count": 65536,
+        "scale": 3.484375
+      },
+      "shared_runtime_members": [
+        "model.layers.12.linear_attn.in_proj_qkv",
+        "model.layers.12.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.12.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.12.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.12.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          10.375
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.1328125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996618628501892,
+        "max_abs": 2.125,
+        "mse": 5.887982297281269e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006762396660633385,
+        "sample_count": 65536,
+        "scale": 0.1328125
+      },
+      "shared_runtime_members": [
+        "model.layers.12.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.12.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.12.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.12.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          13.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.18709735572338104,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996643662452698,
+        "max_abs": 2.796875,
+        "mse": 4.289126991352532e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006733268382959068,
+        "sample_count": 65536,
+        "scale": 0.18709735572338104
+      },
+      "shared_runtime_members": [
+        "model.layers.12.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.12.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.12.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.12.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          41.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.9765625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997274279594421,
+        "max_abs": 31.625,
+        "mse": 0.00025304124574176967,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005453033372759819,
+        "sample_count": 65536,
+        "scale": 1.9765625
+      },
+      "shared_runtime_members": [
+        "model.layers.12.mlp.gate_proj",
+        "model.layers.12.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.13.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.13.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.13.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          62.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.640625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999744176864624,
+        "max_abs": 58.25,
+        "mse": 0.0005637127906084061,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005228686495684087,
+        "sample_count": 65536,
+        "scale": 3.640625
+      },
+      "shared_runtime_members": [
+        "model.layers.13.linear_attn.in_proj_qkv",
+        "model.layers.13.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.13.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.13.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.13.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          15.375
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.15260660648345947,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996782541275024,
+        "max_abs": 2.40625,
+        "mse": 5.158508429303765e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000644510262645781,
+        "sample_count": 65536,
+        "scale": 0.15260660648345947
+      },
+      "shared_runtime_members": [
+        "model.layers.13.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.13.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.13.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.13.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          24.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.20010404288768768,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996611475944519,
+        "max_abs": 2.578125,
+        "mse": 5.163413788977778e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006784949800930917,
+        "sample_count": 65536,
+        "scale": 0.20010404288768768
+      },
+      "shared_runtime_members": [
+        "model.layers.13.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.13.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.13.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.13.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          41.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.121181011199951,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997255206108093,
+        "max_abs": 32.5,
+        "mse": 0.0002728169783949852,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005614191759377718,
+        "sample_count": 65536,
+        "scale": 2.121181011199951
+      },
+      "shared_runtime_members": [
+        "model.layers.13.mlp.gate_proj",
+        "model.layers.13.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.14.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.14.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.14.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          65.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.5945000648498535,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9998029470443726,
+        "max_abs": 58.75,
+        "mse": 0.0004293651145417243,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0003968760138377547,
+        "sample_count": 65536,
+        "scale": 3.5945000648498535
+      },
+      "shared_runtime_members": [
+        "model.layers.14.linear_attn.in_proj_qkv",
+        "model.layers.14.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.14.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.14.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.14.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          25.375
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.17922303080558777,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996659755706787,
+        "max_abs": 2.140625,
+        "mse": 9.392450010636821e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006698262877762318,
+        "sample_count": 65536,
+        "scale": 0.17922303080558777
+      },
+      "shared_runtime_members": [
+        "model.layers.14.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.14.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.14.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.14.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          14.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.17111626267433167,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996589422225952,
+        "max_abs": 2.65625,
+        "mse": 5.605688784271479e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006827744655311108,
+        "sample_count": 65536,
+        "scale": 0.17111626267433167
+      },
+      "shared_runtime_members": [
+        "model.layers.14.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.14.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.14.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.14.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          46.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.203125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997683167457581,
+        "max_abs": 35.25,
+        "mse": 0.00025065234513022006,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0004658612597268075,
+        "sample_count": 65536,
+        "scale": 2.203125
+      },
+      "shared_runtime_members": [
+        "model.layers.14.mlp.gate_proj",
+        "model.layers.14.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.15.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.15.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.15.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          18.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.24696582555770874,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999662458896637,
+        "max_abs": 2.953125,
+        "mse": 6.479097464762162e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006755244685336947,
+        "sample_count": 65536,
+        "scale": 0.24696582555770874
+      },
+      "shared_runtime_members": [
+        "model.layers.15.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.15.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.15.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.15.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          46.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.137497901916504,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997310638427734,
+        "max_abs": 32.75,
+        "mse": 0.00028624924016185105,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005378842470236123,
+        "sample_count": 65536,
+        "scale": 2.137497901916504
+      },
+      "shared_runtime_members": [
+        "model.layers.15.mlp.gate_proj",
+        "model.layers.15.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.15.self_attn.o_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.15.self_attn.o_proj.input_scale",
+      "hook_module": "model.layers.15.self_attn.o_proj",
+      "observer": {
+        "max_abs_per_group": [
+          7.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.1826171875,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.99965500831604,
+        "max_abs": 2.921875,
+        "mse": 2.229592610092368e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006900402368046343,
+        "sample_count": 65536,
+        "scale": 0.1826171875
+      },
+      "shared_runtime_members": [
+        "model.layers.15.self_attn.o_proj"
+      ]
+    },
+    "model.language_model.layers.15.self_attn.q_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.15.self_attn.q_proj.input_scale",
+      "hook_module": "model.layers.15.self_attn.q_proj",
+      "observer": {
+        "max_abs_per_group": [
+          101.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.421875,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997588396072388,
+        "max_abs": 54.75,
+        "mse": 0.0004933654563501477,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0004835173022001982,
+        "sample_count": 65536,
+        "scale": 3.421875
+      },
+      "shared_runtime_members": [
+        "model.layers.15.self_attn.q_proj",
+        "model.layers.15.self_attn.k_proj",
+        "model.layers.15.self_attn.v_proj"
+      ]
+    },
+    "model.language_model.layers.16.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.16.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.16.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          59.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.353254556655884,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997638463973999,
+        "max_abs": 55.25,
+        "mse": 0.0005220661987550557,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005089822807349265,
+        "sample_count": 65536,
+        "scale": 3.353254556655884
+      },
+      "shared_runtime_members": [
+        "model.layers.16.linear_attn.in_proj_qkv",
+        "model.layers.16.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.16.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.16.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.16.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          18.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.15790770947933197,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996676445007324,
+        "max_abs": 2.515625,
+        "mse": 8.398748832405545e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006645353860221803,
+        "sample_count": 65536,
+        "scale": 0.15790770947933197
+      },
+      "shared_runtime_members": [
+        "model.layers.16.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.16.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.16.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.16.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          20.125
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.2119140625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996616244316101,
+        "max_abs": 3.390625,
+        "mse": 8.254193744505756e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006766114383935928,
+        "sample_count": 65536,
+        "scale": 0.2119140625
+      },
+      "shared_runtime_members": [
+        "model.layers.16.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.16.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.16.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.16.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          46.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.09375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997008442878723,
+        "max_abs": 33.5,
+        "mse": 0.00032082939287647605,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005995886749587953,
+        "sample_count": 65536,
+        "scale": 2.09375
+      },
+      "shared_runtime_members": [
+        "model.layers.16.mlp.gate_proj",
+        "model.layers.16.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.17.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.17.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.17.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          65.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.75,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997220635414124,
+        "max_abs": 60.0,
+        "mse": 0.0006763472338207066,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005572174559347332,
+        "sample_count": 65536,
+        "scale": 3.75
+      },
+      "shared_runtime_members": [
+        "model.layers.17.linear_attn.in_proj_qkv",
+        "model.layers.17.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.17.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.17.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.17.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          44.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.1508447229862213,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996702671051025,
+        "max_abs": 2.28125,
+        "mse": 8.692388291819952e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006594171863980591,
+        "sample_count": 65536,
+        "scale": 0.1508447229862213
+      },
+      "shared_runtime_members": [
+        "model.layers.17.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.17.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.17.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.17.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          22.375
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.28125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996786117553711,
+        "max_abs": 7.875,
+        "mse": 1.0938376362901181e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006504392367787659,
+        "sample_count": 65536,
+        "scale": 0.28125
+      },
+      "shared_runtime_members": [
+        "model.layers.17.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.17.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.17.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.17.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          44.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.121181011199951,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996960163116455,
+        "max_abs": 32.5,
+        "mse": 0.00034272015909664333,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006093928823247552,
+        "sample_count": 65536,
+        "scale": 2.121181011199951
+      },
+      "shared_runtime_members": [
+        "model.layers.17.mlp.gate_proj",
+        "model.layers.17.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.18.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.18.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.18.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          62.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.99973464012146,
+        "max_abs": 58.0,
+        "mse": 0.0006386166787706316,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005384006653912365,
+        "sample_count": 65536,
+        "scale": 3.625
+      },
+      "shared_runtime_members": [
+        "model.layers.18.linear_attn.in_proj_qkv",
+        "model.layers.18.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.18.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.18.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.18.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          48.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.2353515625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996915459632874,
+        "max_abs": 15.0625,
+        "mse": 2.034118188021239e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006184169906191528,
+        "sample_count": 65536,
+        "scale": 0.2353515625
+      },
+      "shared_runtime_members": [
+        "model.layers.18.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.18.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.18.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.18.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          91.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.3849858343601227,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996556639671326,
+        "max_abs": 6.09375,
+        "mse": 2.4093355023069307e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006886210176162422,
+        "sample_count": 65536,
+        "scale": 0.3849858343601227
+      },
+      "shared_runtime_members": [
+        "model.layers.18.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.18.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.18.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.18.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          47.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.650714874267578,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997127056121826,
+        "max_abs": 38.25,
+        "mse": 0.00043962529161944985,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005805524997413158,
+        "sample_count": 65536,
+        "scale": 2.650714874267578
+      },
+      "shared_runtime_members": [
+        "model.layers.18.mlp.gate_proj",
+        "model.layers.18.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.19.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.19.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.19.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          50.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.5,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997039437294006,
+        "max_abs": 16.25,
+        "mse": 2.7220567062613554e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005924049182794988,
+        "sample_count": 65536,
+        "scale": 0.5
+      },
+      "shared_runtime_members": [
+        "model.layers.19.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.19.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.19.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.19.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          37.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996837973594666,
+        "max_abs": 34.0,
+        "mse": 0.00046771939378231764,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006428702617995441,
+        "sample_count": 65536,
+        "scale": 2.125
+      },
+      "shared_runtime_members": [
+        "model.layers.19.mlp.gate_proj",
+        "model.layers.19.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.19.self_attn.o_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.19.self_attn.o_proj.input_scale",
+      "hook_module": "model.layers.19.self_attn.o_proj",
+      "observer": {
+        "max_abs_per_group": [
+          54.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.322265625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999783456325531,
+        "max_abs": 51.75,
+        "mse": 4.529602301772684e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.00043477793224155903,
+        "sample_count": 65536,
+        "scale": 0.322265625
+      },
+      "shared_runtime_members": [
+        "model.layers.19.self_attn.o_proj"
+      ]
+    },
+    "model.language_model.layers.19.self_attn.q_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.19.self_attn.q_proj.input_scale",
+      "hook_module": "model.layers.19.self_attn.q_proj",
+      "observer": {
+        "max_abs_per_group": [
+          56.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.09375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996926188468933,
+        "max_abs": 49.25,
+        "mse": 0.000696327246259898,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006147236563265324,
+        "sample_count": 65536,
+        "scale": 3.09375
+      },
+      "shared_runtime_members": [
+        "model.layers.19.self_attn.q_proj",
+        "model.layers.19.self_attn.k_proj",
+        "model.layers.19.self_attn.v_proj"
+      ]
+    },
+    "model.language_model.layers.2.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.2.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.2.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          35.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9998054504394531,
+        "max_abs": 34.75,
+        "mse": 0.00014889465819578618,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.00038926227716729045,
+        "sample_count": 65536,
+        "scale": 2.125
+      },
+      "shared_runtime_members": [
+        "model.layers.2.linear_attn.in_proj_qkv",
+        "model.layers.2.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.2.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.2.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.2.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          6.78125
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.04736328125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996602535247803,
+        "max_abs": 0.7578125,
+        "mse": 2.6353137627666e-07,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000680773111525923,
+        "sample_count": 65536,
+        "scale": 0.04736328125
+      },
+      "shared_runtime_members": [
+        "model.layers.2.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.2.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.2.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.2.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          18.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.1943359375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996858835220337,
+        "max_abs": 3.109375,
+        "mse": 6.860685743959039e-07,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006291709141805768,
+        "sample_count": 65536,
+        "scale": 0.1943359375
+      },
+      "shared_runtime_members": [
+        "model.layers.2.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.2.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.2.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.2.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          6.3125
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.427734375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999657928943634,
+        "max_abs": 4.0,
+        "mse": 4.114151670364663e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006843380979262292,
+        "sample_count": 65536,
+        "scale": 0.427734375
+      },
+      "shared_runtime_members": [
+        "model.layers.2.mlp.gate_proj",
+        "model.layers.2.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.20.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.20.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.20.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          58.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.1980884075164795,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996842741966248,
+        "max_abs": 49.0,
+        "mse": 0.0008199027506634593,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006313706981018186,
+        "sample_count": 65536,
+        "scale": 3.1980884075164795
+      },
+      "shared_runtime_members": [
+        "model.layers.20.linear_attn.in_proj_qkv",
+        "model.layers.20.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.20.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.20.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.20.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          52.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.3754846453666687,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996516704559326,
+        "max_abs": 5.78125,
+        "mse": 1.9300121493870392e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0007012386922724545,
+        "sample_count": 65536,
+        "scale": 0.3754846453666687
+      },
+      "shared_runtime_members": [
+        "model.layers.20.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.20.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.20.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.20.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          57.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.6796875,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997026324272156,
+        "max_abs": 21.75,
+        "mse": 2.6529502065386623e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000595779565628618,
+        "sample_count": 65536,
+        "scale": 0.6796875
+      },
+      "shared_runtime_members": [
+        "model.layers.20.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.20.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.20.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.20.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          33.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.851911187171936,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996778964996338,
+        "max_abs": 29.5,
+        "mse": 0.0005119505221955478,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006453552050516009,
+        "sample_count": 65536,
+        "scale": 1.851911187171936
+      },
+      "shared_runtime_members": [
+        "model.layers.20.mlp.gate_proj",
+        "model.layers.20.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.21.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.21.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.21.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          55.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.0625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996798634529114,
+        "max_abs": 49.0,
+        "mse": 0.0008215959533117712,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006402177386917174,
+        "sample_count": 65536,
+        "scale": 3.0625
+      },
+      "shared_runtime_members": [
+        "model.layers.21.linear_attn.in_proj_qkv",
+        "model.layers.21.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.21.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.21.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.21.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          53.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.5347331166267395,
+      "search_result": {
+        "candidate_count": 60,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996687769889832,
+        "max_abs": 10.625,
+        "mse": 2.4613509594928473e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006696521304547787,
+        "sample_count": 65536,
+        "scale": 0.5347331166267395
+      },
+      "shared_runtime_members": [
+        "model.layers.21.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.21.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.21.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.21.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          58.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.515625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996703267097473,
+        "max_abs": 10.0625,
+        "mse": 3.425931936362758e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006610311684198678,
+        "sample_count": 65536,
+        "scale": 0.515625
+      },
+      "shared_runtime_members": [
+        "model.layers.21.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.21.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.21.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.21.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          31.375
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.6724697351455688,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996621012687683,
+        "max_abs": 25.625,
+        "mse": 0.0005178506253287196,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006767126615159214,
+        "sample_count": 65536,
+        "scale": 1.6724697351455688
+      },
+      "shared_runtime_members": [
+        "model.layers.21.mlp.gate_proj",
+        "model.layers.21.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.22.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.22.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.22.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          52.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.453125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996971487998962,
+        "max_abs": 39.25,
+        "mse": 0.0007373149273917079,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006056526326574385,
+        "sample_count": 65536,
+        "scale": 2.453125
+      },
+      "shared_runtime_members": [
+        "model.layers.22.linear_attn.in_proj_qkv",
+        "model.layers.22.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.22.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.22.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.22.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          50.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.408203125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996414184570312,
+        "max_abs": 13.0625,
+        "mse": 2.902572668972425e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0007176345097832382,
+        "sample_count": 65536,
+        "scale": 0.408203125
+      },
+      "shared_runtime_members": [
+        "model.layers.22.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.22.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.22.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.22.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          177.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 1.0809595584869385,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996934533119202,
+        "max_abs": 30.375,
+        "mse": 5.90462404943537e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006136767333373427,
+        "sample_count": 65536,
+        "scale": 1.0809595584869385
+      },
+      "shared_runtime_members": [
+        "model.layers.22.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.22.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.22.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.22.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          42.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.9765625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996798038482666,
+        "max_abs": 31.625,
+        "mse": 0.0006376700475811958,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006409175111912191,
+        "sample_count": 65536,
+        "scale": 1.9765625
+      },
+      "shared_runtime_members": [
+        "model.layers.22.mlp.gate_proj",
+        "model.layers.22.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.23.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.23.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.23.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          90.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.6484375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996828436851501,
+        "max_abs": 26.25,
+        "mse": 5.810424772789702e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006415012176148593,
+        "sample_count": 65536,
+        "scale": 0.6484375
+      },
+      "shared_runtime_members": [
+        "model.layers.23.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.23.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.23.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.23.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          31.625
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.34375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996718764305115,
+        "max_abs": 21.5,
+        "mse": 0.0005905560683459044,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006563751376233995,
+        "sample_count": 65536,
+        "scale": 1.34375
+      },
+      "shared_runtime_members": [
+        "model.layers.23.mlp.gate_proj",
+        "model.layers.23.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.23.self_attn.o_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.23.self_attn.o_proj.input_scale",
+      "hook_module": "model.layers.23.self_attn.o_proj",
+      "observer": {
+        "max_abs_per_group": [
+          38.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.389088898897171,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996567368507385,
+        "max_abs": 6.0625,
+        "mse": 5.497373058460653e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006875791004858911,
+        "sample_count": 65536,
+        "scale": 0.389088898897171
+      },
+      "shared_runtime_members": [
+        "model.layers.23.self_attn.o_proj"
+      ]
+    },
+    "model.language_model.layers.23.self_attn.q_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.23.self_attn.q_proj.input_scale",
+      "hook_module": "model.layers.23.self_attn.q_proj",
+      "observer": {
+        "max_abs_per_group": [
+          56.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.5111796855926514,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996628165245056,
+        "max_abs": 41.5,
+        "mse": 0.000812547339592129,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006751566543243825,
+        "sample_count": 65536,
+        "scale": 2.5111796855926514
+      },
+      "shared_runtime_members": [
+        "model.layers.23.self_attn.q_proj",
+        "model.layers.23.self_attn.k_proj",
+        "model.layers.23.self_attn.v_proj"
+      ]
+    },
+    "model.language_model.layers.24.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.24.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.24.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          48.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.545417308807373,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996872544288635,
+        "max_abs": 39.0,
+        "mse": 0.0008151392685249448,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006300443201325834,
+        "sample_count": 65536,
+        "scale": 2.545417308807373
+      },
+      "shared_runtime_members": [
+        "model.layers.24.linear_attn.in_proj_qkv",
+        "model.layers.24.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.24.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.24.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.24.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          69.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.9625195860862732,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996403455734253,
+        "max_abs": 19.125,
+        "mse": 5.8397738030180335e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0007200819673016667,
+        "sample_count": 65536,
+        "scale": 0.9625195860862732
+      },
+      "shared_runtime_members": [
+        "model.layers.24.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.24.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.24.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.24.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          91.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 1.046875,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996620416641235,
+        "max_abs": 17.375,
+        "mse": 6.0117199609521776e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006761086406186223,
+        "sample_count": 65536,
+        "scale": 1.046875
+      },
+      "shared_runtime_members": [
+        "model.layers.24.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.24.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.24.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.24.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          33.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.2623062133789062,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996597170829773,
+        "max_abs": 20.25,
+        "mse": 0.0006252630264498293,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006805104785598814,
+        "sample_count": 65536,
+        "scale": 1.2623062133789062
+      },
+      "shared_runtime_members": [
+        "model.layers.24.mlp.gate_proj",
+        "model.layers.24.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.25.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.25.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.25.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          51.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.5088937282562256,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996715188026428,
+        "max_abs": 36.25,
+        "mse": 0.0008179586147889495,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006571292178705335,
+        "sample_count": 65536,
+        "scale": 2.5088937282562256
+      },
+      "shared_runtime_members": [
+        "model.layers.25.linear_attn.in_proj_qkv",
+        "model.layers.25.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.25.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.25.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.25.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          73.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.780672550201416,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999671995639801,
+        "max_abs": 10.4375,
+        "mse": 3.386207390576601e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006594965234398842,
+        "sample_count": 65536,
+        "scale": 0.780672550201416
+      },
+      "shared_runtime_members": [
+        "model.layers.25.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.25.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.25.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.25.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          105.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.49154743552207947,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997197389602661,
+        "max_abs": 27.625,
+        "mse": 5.583591337199323e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005685576470568776,
+        "sample_count": 65536,
+        "scale": 0.49154743552207947
+      },
+      "shared_runtime_members": [
+        "model.layers.25.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.25.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.25.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.25.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          35.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.708099126815796,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996656179428101,
+        "max_abs": 26.25,
+        "mse": 0.0007095686160027981,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000669561792165041,
+        "sample_count": 65536,
+        "scale": 1.708099126815796
+      },
+      "shared_runtime_members": [
+        "model.layers.25.mlp.gate_proj",
+        "model.layers.25.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.26.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.26.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.26.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          49.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.4377193450927734,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996616840362549,
+        "max_abs": 34.25,
+        "mse": 0.0008178725838661194,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000676677213050425,
+        "sample_count": 65536,
+        "scale": 2.4377193450927734
+      },
+      "shared_runtime_members": [
+        "model.layers.26.linear_attn.in_proj_qkv",
+        "model.layers.26.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.26.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.26.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.26.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          80.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.7734375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997183084487915,
+        "max_abs": 24.75,
+        "mse": 3.0460734706139192e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000570323842111975,
+        "sample_count": 65536,
+        "scale": 0.7734375
+      },
+      "shared_runtime_members": [
+        "model.layers.26.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.26.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.26.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.26.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          324.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 1.0883392095565796,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999664843082428,
+        "max_abs": 21.625,
+        "mse": 7.572381582576782e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006714805494993925,
+        "sample_count": 65536,
+        "scale": 1.0883392095565796
+      },
+      "shared_runtime_members": [
+        "model.layers.26.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.26.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.26.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.26.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          43.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.4450156688690186,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996655583381653,
+        "max_abs": 38.0,
+        "mse": 0.0008074038196355104,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006687999120913446,
+        "sample_count": 65536,
+        "scale": 2.4450156688690186
+      },
+      "shared_runtime_members": [
+        "model.layers.26.mlp.gate_proj",
+        "model.layers.26.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.27.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.27.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.27.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          212.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 1.538515567779541,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996510148048401,
+        "max_abs": 21.5,
+        "mse": 0.00010221644333796576,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0007036589668132365,
+        "sample_count": 65536,
+        "scale": 1.538515567779541
+      },
+      "shared_runtime_members": [
+        "model.layers.27.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.27.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.27.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.27.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          42.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.2190818786621094,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996730089187622,
+        "max_abs": 34.0,
+        "mse": 0.0008222545147873461,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000654195377137512,
+        "sample_count": 65536,
+        "scale": 2.2190818786621094
+      },
+      "shared_runtime_members": [
+        "model.layers.27.mlp.gate_proj",
+        "model.layers.27.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.27.self_attn.o_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.27.self_attn.o_proj.input_scale",
+      "hook_module": "model.layers.27.self_attn.o_proj",
+      "observer": {
+        "max_abs_per_group": [
+          98.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.578125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996519088745117,
+        "max_abs": 25.25,
+        "mse": 0.00017047443543560803,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000696937961038202,
+        "sample_count": 65536,
+        "scale": 1.578125
+      },
+      "shared_runtime_members": [
+        "model.layers.27.self_attn.o_proj"
+      ]
+    },
+    "model.language_model.layers.27.self_attn.q_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.27.self_attn.q_proj.input_scale",
+      "hook_module": "model.layers.27.self_attn.q_proj",
+      "observer": {
+        "max_abs_per_group": [
+          62.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.5,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996644854545593,
+        "max_abs": 58.25,
+        "mse": 0.0009617731557227671,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006844839663244784,
+        "sample_count": 65536,
+        "scale": 2.5
+      },
+      "shared_runtime_members": [
+        "model.layers.27.self_attn.q_proj",
+        "model.layers.27.self_attn.k_proj",
+        "model.layers.27.self_attn.v_proj"
+      ]
+    },
+    "model.language_model.layers.28.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.28.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.28.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          53.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.484375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996621012687683,
+        "max_abs": 39.75,
+        "mse": 0.0009626105893403292,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006774526555091143,
+        "sample_count": 65536,
+        "scale": 2.484375
+      },
+      "shared_runtime_members": [
+        "model.layers.28.linear_attn.in_proj_qkv",
+        "model.layers.28.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.28.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.28.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.28.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          99.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.0739452838897705,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996783137321472,
+        "max_abs": 30.0,
+        "mse": 9.15594573598355e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006446660263463855,
+        "sample_count": 65536,
+        "scale": 1.0739452838897705
+      },
+      "shared_runtime_members": [
+        "model.layers.28.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.28.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.28.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.28.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          196.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.89453125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996609687805176,
+        "max_abs": 14.3125,
+        "mse": 0.00010239807306788862,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006807362078689039,
+        "sample_count": 65536,
+        "scale": 0.89453125
+      },
+      "shared_runtime_members": [
+        "model.layers.28.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.28.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.28.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.28.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          43.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.338427782058716,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996621608734131,
+        "max_abs": 35.75,
+        "mse": 0.0008873882470652461,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006758178933523595,
+        "sample_count": 65536,
+        "scale": 2.338427782058716
+      },
+      "shared_runtime_members": [
+        "model.layers.28.mlp.gate_proj",
+        "model.layers.28.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.29.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.29.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.29.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          43.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.633448600769043,
+      "search_result": {
+        "candidate_count": 57,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999671995639801,
+        "max_abs": 37.0,
+        "mse": 0.0008097845711745322,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000656362681183964,
+        "sample_count": 65536,
+        "scale": 2.633448600769043
+      },
+      "shared_runtime_members": [
+        "model.layers.29.linear_attn.in_proj_qkv",
+        "model.layers.29.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.29.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.29.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.29.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          93.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.1017069816589355,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996579885482788,
+        "max_abs": 17.5,
+        "mse": 8.622423047199845e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006844138843007386,
+        "sample_count": 65536,
+        "scale": 1.1017069816589355
+      },
+      "shared_runtime_members": [
+        "model.layers.29.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.29.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.29.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.29.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          131.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 2.3523988723754883,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996667504310608,
+        "max_abs": 47.0,
+        "mse": 0.00018237388576380908,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006672271410934627,
+        "sample_count": 65536,
+        "scale": 2.3523988723754883
+      },
+      "shared_runtime_members": [
+        "model.layers.29.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.29.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.29.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.29.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          47.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.6875,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996756315231323,
+        "max_abs": 43.0,
+        "mse": 0.000939426536206156,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006542224436998367,
+        "sample_count": 65536,
+        "scale": 2.6875
+      },
+      "shared_runtime_members": [
+        "model.layers.29.mlp.gate_proj",
+        "model.layers.29.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.3.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.3.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.3.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          13.5625
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.09978418052196503,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996595978736877,
+        "max_abs": 2.0,
+        "mse": 6.752187005076848e-07,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006807832978665829,
+        "sample_count": 65536,
+        "scale": 0.09978418052196503
+      },
+      "shared_runtime_members": [
+        "model.layers.3.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.3.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.3.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.3.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          6.09375
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.21781642735004425,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999652624130249,
+        "max_abs": 3.4375,
+        "mse": 5.411371239461005e-05,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006951657705940306,
+        "sample_count": 65536,
+        "scale": 0.21781642735004425
+      },
+      "shared_runtime_members": [
+        "model.layers.3.mlp.gate_proj",
+        "model.layers.3.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.3.self_attn.o_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.3.self_attn.o_proj.input_scale",
+      "hook_module": "model.layers.3.self_attn.o_proj",
+      "observer": {
+        "max_abs_per_group": [
+          5.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.11201632767915726,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996889233589172,
+        "max_abs": 1.71875,
+        "mse": 9.768375548446784e-07,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006286944262683392,
+        "sample_count": 65536,
+        "scale": 0.11201632767915726
+      },
+      "shared_runtime_members": [
+        "model.layers.3.self_attn.o_proj"
+      ]
+    },
+    "model.language_model.layers.3.self_attn.q_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.3.self_attn.q_proj.input_scale",
+      "hook_module": "model.layers.3.self_attn.q_proj",
+      "observer": {
+        "max_abs_per_group": [
+          77.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 4.71875,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997546672821045,
+        "max_abs": 75.5,
+        "mse": 0.0007578528602607548,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0004981401143595576,
+        "sample_count": 65536,
+        "scale": 4.71875
+      },
+      "shared_runtime_members": [
+        "model.layers.3.self_attn.q_proj",
+        "model.layers.3.self_attn.k_proj",
+        "model.layers.3.self_attn.v_proj"
+      ]
+    },
+    "model.language_model.layers.30.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.30.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.30.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          53.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.03125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996640086174011,
+        "max_abs": 48.5,
+        "mse": 0.0009083744371309876,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006717423675581813,
+        "sample_count": 65536,
+        "scale": 3.03125
+      },
+      "shared_runtime_members": [
+        "model.layers.30.linear_attn.in_proj_qkv",
+        "model.layers.30.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.30.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.30.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.30.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          132.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.8125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996824860572815,
+        "max_abs": 29.0,
+        "mse": 0.0002322893706150353,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006367189926095307,
+        "sample_count": 65536,
+        "scale": 1.8125
+      },
+      "shared_runtime_members": [
+        "model.layers.30.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.30.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.30.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.30.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          224.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 1.5872933864593506,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996558427810669,
+        "max_abs": 26.25,
+        "mse": 0.0002472074411343783,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006917125429026783,
+        "sample_count": 65536,
+        "scale": 1.5872933864593506
+      },
+      "shared_runtime_members": [
+        "model.layers.30.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.30.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.30.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.30.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          49.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.765531301498413,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996680617332458,
+        "max_abs": 41.5,
+        "mse": 0.0009550707181915641,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006638686172664165,
+        "sample_count": 65536,
+        "scale": 2.765531301498413
+      },
+      "shared_runtime_members": [
+        "model.layers.30.mlp.gate_proj",
+        "model.layers.30.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.31.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.31.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.31.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          352.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 2.9064316749572754,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9998002052307129,
+        "max_abs": 231.0,
+        "mse": 0.000859009160194546,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0004055244498886168,
+        "sample_count": 65536,
+        "scale": 2.9064316749572754
+      },
+      "shared_runtime_members": [
+        "model.layers.31.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.31.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.31.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.31.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          50.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.703125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996732473373413,
+        "max_abs": 43.25,
+        "mse": 0.000865280395373702,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006545928190462291,
+        "sample_count": 65536,
+        "scale": 2.703125
+      },
+      "shared_runtime_members": [
+        "model.layers.31.mlp.gate_proj",
+        "model.layers.31.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.31.self_attn.o_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.31.self_attn.o_proj.input_scale",
+      "hook_module": "model.layers.31.self_attn.o_proj",
+      "observer": {
+        "max_abs_per_group": [
+          100.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.7145702838897705,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996554255485535,
+        "max_abs": 15.625,
+        "mse": 0.000473891879664734,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.00069265445927158,
+        "sample_count": 65536,
+        "scale": 1.7145702838897705
+      },
+      "shared_runtime_members": [
+        "model.layers.31.self_attn.o_proj"
+      ]
+    },
+    "model.language_model.layers.31.self_attn.q_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.31.self_attn.q_proj.input_scale",
+      "hook_module": "model.layers.31.self_attn.q_proj",
+      "observer": {
+        "max_abs_per_group": [
+          49.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.4801502227783203,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996618032455444,
+        "max_abs": 38.0,
+        "mse": 0.0009178841719403863,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006763728451915085,
+        "sample_count": 65536,
+        "scale": 2.4801502227783203
+      },
+      "shared_runtime_members": [
+        "model.layers.31.self_attn.q_proj",
+        "model.layers.31.self_attn.k_proj",
+        "model.layers.31.self_attn.v_proj"
+      ]
+    },
+    "model.language_model.layers.4.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.4.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.4.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          37.25
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.296875,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997608661651611,
+        "max_abs": 36.75,
+        "mse": 0.00024483210290782154,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.00048823829274624586,
+        "sample_count": 65536,
+        "scale": 2.296875
+      },
+      "shared_runtime_members": [
+        "model.layers.4.linear_attn.in_proj_qkv",
+        "model.layers.4.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.4.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.4.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.4.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          10.125
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.11902636289596558,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996623992919922,
+        "max_abs": 1.1015625,
+        "mse": 6.611797402911179e-07,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000675128074362874,
+        "sample_count": 65536,
+        "scale": 0.11902636289596558
+      },
+      "shared_runtime_members": [
+        "model.layers.4.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.4.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.4.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.4.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          15.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.0673828125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.99966961145401,
+        "max_abs": 2.15625,
+        "mse": 1.0695266610127874e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006614768062718213,
+        "sample_count": 65536,
+        "scale": 0.0673828125
+      },
+      "shared_runtime_members": [
+        "model.layers.4.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.4.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.4.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.4.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          16.375
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.9744152426719666,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997078776359558,
+        "max_abs": 16.25,
+        "mse": 0.00010113348253071308,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005948573816567659,
+        "sample_count": 65536,
+        "scale": 0.9744152426719666
+      },
+      "shared_runtime_members": [
+        "model.layers.4.mlp.gate_proj",
+        "model.layers.4.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.5.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.5.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.5.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          48.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.9375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997629523277283,
+        "max_abs": 47.0,
+        "mse": 0.0003525392385199666,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.00047471720608882606,
+        "sample_count": 65536,
+        "scale": 2.9375
+      },
+      "shared_runtime_members": [
+        "model.layers.5.linear_attn.in_proj_qkv",
+        "model.layers.5.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.5.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.5.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.5.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          10.375
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.15180322527885437,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997199773788452,
+        "max_abs": 2.5,
+        "mse": 1.8461779518474941e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000562511442694813,
+        "sample_count": 65536,
+        "scale": 0.15180322527885437
+      },
+      "shared_runtime_members": [
+        "model.layers.5.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.5.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.5.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.5.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          15.0625
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.11181640625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996942281723022,
+        "max_abs": 6.1875,
+        "mse": 2.2687695491185877e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006128689856268466,
+        "sample_count": 65536,
+        "scale": 0.11181640625
+      },
+      "shared_runtime_members": [
+        "model.layers.5.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.5.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.5.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.5.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          21.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.3542925119400024,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997239112854004,
+        "max_abs": 21.375,
+        "mse": 0.000136354734422639,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005520873819477856,
+        "sample_count": 65536,
+        "scale": 1.3542925119400024
+      },
+      "shared_runtime_members": [
+        "model.layers.5.mlp.gate_proj",
+        "model.layers.5.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.6.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.6.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.6.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          53.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.296875,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997818470001221,
+        "max_abs": 52.75,
+        "mse": 0.00039664917858317494,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0004472420259844512,
+        "sample_count": 65536,
+        "scale": 3.296875
+      },
+      "shared_runtime_members": [
+        "model.layers.6.linear_attn.in_proj_qkv",
+        "model.layers.6.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.6.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.6.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.6.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          31.125
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.1586572229862213,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996541738510132,
+        "max_abs": 2.265625,
+        "mse": 3.00954388876562e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.00069154251832515,
+        "sample_count": 65536,
+        "scale": 0.1586572229862213
+      },
+      "shared_runtime_members": [
+        "model.layers.6.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.6.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.6.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.6.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          79.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.19196484982967377,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.999661922454834,
+        "max_abs": 4.5625,
+        "mse": 3.523585064613144e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006767726154066622,
+        "sample_count": 65536,
+        "scale": 0.19196484982967377
+      },
+      "shared_runtime_members": [
+        "model.layers.6.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.6.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.6.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.6.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          35.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 2.15625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997677803039551,
+        "max_abs": 34.5,
+        "mse": 0.0002111795183736831,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.00046812964137643576,
+        "sample_count": 65536,
+        "scale": 2.15625
+      },
+      "shared_runtime_members": [
+        "model.layers.6.mlp.gate_proj",
+        "model.layers.6.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.7.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.7.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.7.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          27.375
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.15491533279418945,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996621012687683,
+        "max_abs": 3.078125,
+        "mse": 3.464865585556254e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006756407092325389,
+        "sample_count": 65536,
+        "scale": 0.15491533279418945
+      },
+      "shared_runtime_members": [
+        "model.layers.7.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.7.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.7.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.7.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          28.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.6796875,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997172951698303,
+        "max_abs": 26.875,
+        "mse": 0.00018806113803293556,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005661468603648245,
+        "sample_count": 65536,
+        "scale": 1.6796875
+      },
+      "shared_runtime_members": [
+        "model.layers.7.mlp.gate_proj",
+        "model.layers.7.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.7.self_attn.o_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.7.self_attn.o_proj.input_scale",
+      "hook_module": "model.layers.7.self_attn.o_proj",
+      "observer": {
+        "max_abs_per_group": [
+          7.21875
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.1860009729862213,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996618032455444,
+        "max_abs": 2.53125,
+        "mse": 7.09953201294411e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006763868732377887,
+        "sample_count": 65536,
+        "scale": 0.1860009729862213
+      },
+      "shared_runtime_members": [
+        "model.layers.7.self_attn.o_proj"
+      ]
+    },
+    "model.language_model.layers.7.self_attn.q_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.7.self_attn.q_proj.input_scale",
+      "hook_module": "model.layers.7.self_attn.q_proj",
+      "observer": {
+        "max_abs_per_group": [
+          67.0
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 4.09375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997532367706299,
+        "max_abs": 65.5,
+        "mse": 0.000588181137572974,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0004938318161293864,
+        "sample_count": 65536,
+        "scale": 4.09375
+      },
+      "shared_runtime_members": [
+        "model.layers.7.self_attn.q_proj",
+        "model.layers.7.self_attn.k_proj",
+        "model.layers.7.self_attn.v_proj"
+      ]
+    },
+    "model.language_model.layers.8.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.8.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.8.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          52.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.15625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997328519821167,
+        "max_abs": 50.5,
+        "mse": 0.0004299403808545321,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005347870755940676,
+        "sample_count": 65536,
+        "scale": 3.15625
+      },
+      "shared_runtime_members": [
+        "model.layers.8.linear_attn.in_proj_qkv",
+        "model.layers.8.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.8.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.8.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.8.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          13.75
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.16796875,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996551871299744,
+        "max_abs": 2.515625,
+        "mse": 3.3283165521424962e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006909157382324338,
+        "sample_count": 65536,
+        "scale": 0.16796875
+      },
+      "shared_runtime_members": [
+        "model.layers.8.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.8.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.8.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.8.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          24.875
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.19140625,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996678829193115,
+        "max_abs": 3.0625,
+        "mse": 3.4226709431095514e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006638350314460695,
+        "sample_count": 65536,
+        "scale": 0.19140625
+      },
+      "shared_runtime_members": [
+        "model.layers.8.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.8.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.8.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.8.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          30.125
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.7734375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997348189353943,
+        "max_abs": 28.375,
+        "mse": 0.00019346550107002258,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005307347164489329,
+        "sample_count": 65536,
+        "scale": 1.7734375
+      },
+      "shared_runtime_members": [
+        "model.layers.8.mlp.gate_proj",
+        "model.layers.8.mlp.up_proj"
+      ]
+    },
+    "model.language_model.layers.9.linear_attn.in_proj_qkv": {
+      "checkpoint_input_scale": "model.language_model.layers.9.linear_attn.in_proj_qkv.input_scale",
+      "hook_module": "model.layers.9.linear_attn.in_proj_qkv",
+      "observer": {
+        "max_abs_per_group": [
+          55.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 3.375,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997420907020569,
+        "max_abs": 54.0,
+        "mse": 0.00046633047168143094,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0005252191913314164,
+        "sample_count": 65536,
+        "scale": 3.375
+      },
+      "shared_runtime_members": [
+        "model.layers.9.linear_attn.in_proj_qkv",
+        "model.layers.9.linear_attn.in_proj_z"
+      ]
+    },
+    "model.language_model.layers.9.linear_attn.out_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.9.linear_attn.out_proj.input_scale",
+      "hook_module": "model.layers.9.linear_attn.out_proj",
+      "observer": {
+        "max_abs_per_group": [
+          17.5
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 0.1591796875,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996805191040039,
+        "max_abs": 2.546875,
+        "mse": 4.393396920931991e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006398300174623728,
+        "sample_count": 65536,
+        "scale": 0.1591796875
+      },
+      "shared_runtime_members": [
+        "model.layers.9.linear_attn.out_proj"
+      ]
+    },
+    "model.language_model.layers.9.mlp.down_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.9.mlp.down_proj.input_scale",
+      "hook_module": "model.layers.9.mlp.down_proj",
+      "observer": {
+        "max_abs_per_group": [
+          25.875
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 3221225472
+      },
+      "scale": 0.1201171875,
+      "search_result": {
+        "candidate_count": 58,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9996631741523743,
+        "max_abs": 2.421875,
+        "mse": 3.6887754504277837e-06,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.0006739997188560665,
+        "sample_count": 65536,
+        "scale": 0.1201171875
+      },
+      "shared_runtime_members": [
+        "model.layers.9.mlp.down_proj"
+      ]
+    },
+    "model.language_model.layers.9.mlp.gate_proj": {
+      "checkpoint_input_scale": "model.language_model.layers.9.mlp.gate_proj.input_scale",
+      "hook_module": "model.layers.9.mlp.gate_proj",
+      "observer": {
+        "max_abs_per_group": [
+          30.875
+        ],
+        "observation_count": 128,
+        "sample_count_per_group": 65536,
+        "sampled_nonfinite_per_group": [
+          0
+        ],
+        "total_values_per_group": 1073741824
+      },
+      "scale": 1.8125,
+      "search_result": {
+        "candidate_count": 64,
+        "clipping_rate": 0.0,
+        "cosine_similarity": 0.9997214078903198,
+        "max_abs": 29.0,
+        "mse": 0.00021834346989635378,
+        "nonfinite_count": 0,
+        "normalized_mse": 0.000557176535949111,
+        "sample_count": 65536,
+        "scale": 1.8125
+      },
+      "shared_runtime_members": [
+        "model.layers.9.mlp.gate_proj",
+        "model.layers.9.mlp.up_proj"
+      ]
+    }
+  },
+  "model": {
+    "identity_sha256": {
+      "config.json": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+      "model.safetensors-00001-of-00004.safetensors": "db6f444b43d318c92f360a13a25561a6a65b10c0631b8ed305a426dbaa6c380e",
+      "model.safetensors-00002-of-00004.safetensors": "31c7d7e2dd5d207840b31cc59083c8f4c4718959149e0358c0364052bb9a0330",
+      "model.safetensors-00003-of-00004.safetensors": "7ec36ba3a4176a44c3c0876ad80c56a2f70c84bf008d82e9501df642f17dadec",
+      "model.safetensors-00004-of-00004.safetensors": "b62b0c4cd7e44edee103ee8f4fe225f246d5e768e07bfd5f25b63a8aa1fdd0c6",
+      "model.safetensors.index.json": "26d3539b516be613f39563617cb9d33b3f83d401298125be392c80cefb8f7fe5"
+    },
+    "model_type": "qwen3_5",
+    "path": "/public-flash/lvyufeng/models/Qwen3.5-9B",
+    "tokenizer_class": "Qwen2Tokenizer",
+    "tokenizer_sha256": {
+      "merges.txt": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+      "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+      "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+      "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+    },
+    "torch_dtype": "None"
+  },
+  "sampling": {
+    "method": "unique_uniform_windows_from_concatenated_token_stream",
+    "sample_count": 128,
+    "seed": 42,
+    "sequence_length": 2048,
+    "window_starts": [
+      466956,
+      104902,
+      1153556,
+      1027150,
+      936213,
+      585264,
+      429895,
+      2287433,
+      364647,
+      2476705,
+      1769668,
+      133306,
+      124978,
+      392986,
+      917034,
+      975850,
+      2119613,
+      111299,
+      2354032,
+      833985,
+      2285650,
+      1759593,
+      924594,
+      1884119,
+      2471559,
+      1166816,
+      27257,
+      669659,
+      1772573,
+      1427114,
+      1165476,
+      652128,
+      903091,
+      1411779,
+      428700,
+      389004,
+      1593530,
+      405657,
+      1505668,
+      1442654,
+      1109480,
+      182244,
+      1926967,
+      2249103,
+      523558,
+      1587688,
+      330511,
+      2315426,
+      1229678,
+      1516807,
+      2421590,
+      806516,
+      291735,
+      192201,
+      955874,
+      1213781,
+      334671,
+      976395,
+      423630,
+      1594364,
+      1165905,
+      1901740,
+      1530217,
+      682220,
+      1552651,
+      1490113,
+      878736,
+      1119786,
+      299483,
+      717807,
+      2240345,
+      1026811,
+      685359,
+      1938859,
+      1591551,
+      1132243,
+      2336016,
+      921132,
+      1360140,
+      234620,
+      960697,
+      134638,
+      1323105,
+      1682607,
+      1122986,
+      277615,
+      884926,
+      2378925,
+      1319854,
+      891820,
+      2093927,
+      1659400,
+      1924564,
+      599246,
+      1110987,
+      585652,
+      1034430,
+      2354548,
+      2260634,
+      1102018,
+      2451931,
+      1796981,
+      2447514,
+      1675207,
+      1518323,
+      919897,
+      580205,
+      2137108,
+      2069955,
+      381301,
+      197620,
+      459901,
+      641062,
+      671013,
+      1770667,
+      2501520,
+      266454,
+      1613831,
+      1600627,
+      2499337,
+      1963143,
+      2219266,
+      1054507,
+      2320397,
+      48154,
+      480464,
+      2252216,
+      1119145
+    ],
+    "windows_sha256_int64_le": "daec9ada162c778610094c3c97134132182cf50b1789eab40cdd76661365adfd"
+  },
+  "schema_version": 1,
+  "search": {
+    "candidate_batch_size": 16,
+    "eps": 1e-12,
+    "normalized_targets": [
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0,
+      32.0,
+      64.0
+    ],
+    "objective": "mse_cosine",
+    "percentiles": [
+      0.99,
+      0.995,
+      0.999,
+      0.9995,
+      0.9999,
+      1.0
+    ],
+    "refinement_octaves": 0.5,
+    "refinement_steps": 17
+  }
+}

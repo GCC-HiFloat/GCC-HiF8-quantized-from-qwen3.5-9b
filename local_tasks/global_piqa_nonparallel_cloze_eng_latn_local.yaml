@@ -1,0 +1,17 @@
+task: global_piqa_nonparallel_cloze_eng_latn_local
+dataset_path: csv
+dataset_kwargs:
+  data_files:
+    test: /filesdir/datasets/global-piqa/nonparallel/data/nonparallel_eng_latn.tsv
+  delimiter: "\t"
+test_split: test
+output_type: multiple_choice
+doc_to_text: "{{prompt}}"
+doc_to_target: label
+doc_to_choice: "{{[solution0, solution1]}}"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0

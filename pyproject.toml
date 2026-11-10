@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vllm-ascend-hif8"
+version = "0.1.0.dev0"
+description = "Static HiFloat8 W8A8KV8 inference for vLLM on Ascend 910B"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [{name = "lvyufeng", email = "lvyufeng@cqu.edu.cn"}]
+dependencies = []
+
+[project.optional-dependencies]
+torch = ["torch==2.10.0"]
+export = ["safetensors>=0.4.5", "torch==2.10.0"]
+test = ["pytest>=8.0"]
+
+[project.entry-points."vllm.general_plugins"]
+ascend_hif8 = "vllm_ascend_hif8.plugin:register"
+
+[project.scripts]
+hif8-generate-tables = "vllm_ascend_hif8.tablegen:main"
+hif8-quantize = "vllm_ascend_hif8.exporter:main"
+hif8-calibrate-qwen35 = "vllm_ascend_hif8.qwen35_calibrator:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120

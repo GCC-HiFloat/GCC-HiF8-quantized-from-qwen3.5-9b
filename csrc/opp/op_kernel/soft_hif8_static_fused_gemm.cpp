@@ -1,0 +1,5 @@
+#define HIF8_FUSED_KERNEL_CLASS SoftHif8StaticFusedGemmKernel
+#define HIF8_FUSED_KERNEL_ENTRY soft_hif8_static_fused_gemm
+#define HIF8_FUSED_TILING_DATA SoftHif8StaticFusedGemmTilingData
+#define HIF8_FUSED_STATIC_SCALE 1
+#include "soft_hif8_fused_gemm.cpp"
